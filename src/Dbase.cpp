@@ -72,7 +72,6 @@ std::vector<Client> DBase::getAllClients() {
     std::vector<Client> clients;
     std::ifstream file(CLIENT_FILE);
     std::string line;
-
     while (std::getline(file, line)) {
         std::stringstream ss(line);
         std::string name, password, email, phone, pin, accNum;

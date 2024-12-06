@@ -4,19 +4,30 @@
     "version": "2.0.0",
     "tasks": [
         {
+<<<<<<< HEAD
             "label": "All compile c++",
+=======
+            "label": " All compile c++",
+>>>>>>> e78cd1c06e4544cbd4e8e36b4f74f1cf4bddc1e2
             "type": "shell",
             "command": "g++",
             "args": [
                 "-std=c++17",
+<<<<<<< HEAD
                 "./src/*.cpp",
                 "-o",
                 "./bin/BankOnline.exe"
+=======
+                ".\\src\\*.cpp",
+                "-o",
+                ".\\bin\\Main.exe"
+>>>>>>> e78cd1c06e4544cbd4e8e36b4f74f1cf4bddc1e2
             ]
         },
         {
             "label": "run + all compile",
             "type": "shell",
+<<<<<<< HEAD
             "command": "./bin/BankOnline.exe",
             "dependsOn": ["All compile c++"],
             "group": {
@@ -26,3 +37,15 @@
         }
     ]
 }
+=======
+            "command": ".\\bin\\Main",
+            "dependsOn":["All compile c++"],
+            "group": {
+                "kind": "build",
+                "isDefault":true,
+            }
+        }
+
+    ]
+}
+>>>>>>> e78cd1c06e4544cbd4e8e36b4f74f1cf4bddc1e2
